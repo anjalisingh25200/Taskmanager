@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "07b1cfb8-4cea-459b-b57e-d1d0758d95f4",
+		"name": "taskmanager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "request for users",
+			"item": [
+				{
+					"name": "127.0.0.1:3000/users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"Anjali Singh\",\r\n    \"Password\":\"1234@A\",\r\n    \"Email\":\"anjalisingh12@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/users",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						},
+						"description": "post request call"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:3000/users/6220a5b5e2e8b60cbbebf1dc",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"Shalini singh\",\r\n    \"Password\":\"1234566@a\",\r\n    \"Email\":\"shalini123@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/users/6220a5b5e2e8b60cbbebf1dc",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"6220a5b5e2e8b60cbbebf1dc"
+							]
+						},
+						"description": "Patch request"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:3000/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/users",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						},
+						"description": "get request"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:3000/users/6220b6f92149ca984f2f387f",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/users/6220b6f92149ca984f2f387f",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"6220b6f92149ca984f2f387f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:3000/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/users",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "request for tasks by userId",
+			"item": [
+				{
+					"name": "127.0.0.1:3000/users/6220f206c9e7e5aa9bfbef51/tasks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/users/6220f206c9e7e5aa9bfbef51/tasks",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"6220f206c9e7e5aa9bfbef51",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:3000/users/6220f206c9e7e5aa9bfbef51/tasks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"stutdown\",\r\n    \"Description\":\"In processing\",\r\n    \"completed\":\"done\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/users/6220f206c9e7e5aa9bfbef51/tasks",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"6220f206c9e7e5aa9bfbef51",
+								"tasks"
+							]
+						},
+						"description": "Post request"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:3000/users/6220f206c9e7e5aa9bfbef51/tasks/6220f7fb175d6c22136cdad2",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"opening-window\",\r\n    \"Description\":\"In processing\",\r\n    \"completed\":\"done\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/users/6220f206c9e7e5aa9bfbef51/tasks/6220f7fb175d6c22136cdad2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"6220f206c9e7e5aa9bfbef51",
+								"tasks",
+								"6220f7fb175d6c22136cdad2"
+							]
+						},
+						"description": "Patch request"
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:3000/users/6220f206c9e7e5aa9bfbef51/tasks/6220f7fb175d6c22136cdad2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/users/6220f206c9e7e5aa9bfbef51/tasks/6220f7fb175d6c22136cdad2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"6220f206c9e7e5aa9bfbef51",
+								"tasks",
+								"6220f7fb175d6c22136cdad2"
+							]
+						},
+						"description": "Delete request"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
